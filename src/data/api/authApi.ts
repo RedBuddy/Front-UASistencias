@@ -2,6 +2,7 @@ import { getToken } from "@/core/authService";
 import { apiUrl } from "../../../env";
 export const loginApi = async (username: string, password: string) => {
   const url = `${apiUrl}/auth/login`;
+  console.log(url);
   const response = await fetch(url, {
     method: "POST",
     headers: { "Content-Type": "application/json" },

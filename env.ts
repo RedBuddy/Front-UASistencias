@@ -1,1 +1,1 @@
-export const apiUrl = "http://127.0.0.1:8000/api"; // 🔹 URL de la API
+export const apiUrl = "api-uasistencias-production.up.railway.app/api"; // 🔹 URL de la API
