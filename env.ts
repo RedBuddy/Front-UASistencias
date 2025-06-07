@@ -1,1 +1,1 @@
-export const apiUrl = "api-uasistencias-production.up.railway.app/api"; // 🔹 URL de la API
+export const apiUrl = "https://api-uasistencias-production.up.railway.app/api"; // 🔹 URL de la API
