@@ -1,0 +1,19 @@
+import { getAllCarreras as get, addCarrera as add } from "@/data/api/carreraApi";
+import { mapCarreras } from "@/mappers/carreraMapper";
+
+//todo: NECESITARÉ ESTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+//todo: NECESITARÉ ESTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+//todo: NECESITARÉ ESTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+//todo: NECESITARÉ ESTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+
+export const getAllCarreras = async (token: string) => {
+  console.log(token)
+  const response = await get(token);
+
+  return mapCarreras(response);
+};
+
+export const addCarrera = async (nombre: string, token: string) => {
+    const response = await add(nombre, token);
+    return response;
+};
